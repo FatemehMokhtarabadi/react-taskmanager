@@ -1,12 +1,21 @@
-import { appData } from "../../Data/AppData";
 import TaskItem from "../../TaskManager/TaskItem";
 import "../../Sass/styles.css";
 
-const InProgress = () => {
-  return appData
+const InProgress = ({ tasksArray, startTask, completeTask, deleteTask }) => {
+  return tasksArray
     .filter((task) => task.taskStatus === "inProgress")
     .map((task) => {
-      return <TaskItem title={task.title} />;
+      return (
+        <TaskItem
+          key={task.id}
+          taskId={task.id}
+          title={task.title}
+          taskStatus={task.taskStatus}
+          startTask={startTask}
+          completeTask={completeTask}
+          deleteTask={deleteTask}
+        />
+      );
     });
 };
 

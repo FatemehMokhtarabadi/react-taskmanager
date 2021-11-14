@@ -95,7 +95,7 @@
     &__card {
       @include formRaduis;
       height: 75px;
-      width: 85%;
+      width: 50%;
     }
     &__title {
       @include regularText;

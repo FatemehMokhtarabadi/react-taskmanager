@@ -3,7 +3,7 @@ import { v4 as uuidv4 } from "uuid";
 export const appData = [
   {
     title: "working on task manager",
-    taskStatus: "todo",
+    taskStatus: "inProgress",
     id: uuidv4(),
   },
   {
@@ -16,24 +16,24 @@ export const appData = [
     taskStatus: "done",
     id: uuidv4(),
   },
-  {
-    title: "first kiss",
-    taskStatus: "done",
-    id: uuidv4(),
-  },
-  {
-    title: "cooking",
-    taskStatus: "inProgress",
-    id: uuidv4(),
-  },
-  {
-    title: "getting vaccinated",
-    taskStatus: "inProgress",
-    id: uuidv4(),
-  },
-  {
-    title: "calling my friend",
-    taskStatus: "inProgress",
-    id: uuidv4(),
-  },
+  // {
+  //   title: "first kiss",
+  //   taskStatus: "done",
+  //   id: uuidv4(),
+  // },
+  // {
+  //   title: "cooking",
+  //   taskStatus: "inProgress",
+  //   id: uuidv4(),
+  // },
+  // {
+  //   title: "getting vaccinated",
+  //   taskStatus: "inProgress",
+  //   id: uuidv4(),
+  // },
+  // {
+  //   title: "calling my friend",
+  //   taskStatus: "inProgress",
+  //   id: uuidv4(),
+  // },
 ];

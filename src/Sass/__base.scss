@@ -98,3 +98,16 @@ $big: 1024px;
 // M O B I L E    F I R S T 🍊
 
 // M E D I A   Q U E R I E S 🍊
+
+.Inputs {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+@media screen and (min-width: $medium) {
+  .Inputs {
+    flex-direction: row;
+  }
+}

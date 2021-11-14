@@ -1,10 +1,8 @@
 .form {
-  flex: 10%;
-  width: 100%;
   display: flex;
   align-items: center;
-  justify-content: flex-start;
-  margin: 0.1em 1em 0.1em 2em;
+  justify-content: center;
+  margin: 5px;
 
   // &__label {
   // }
@@ -12,7 +10,8 @@
     font-family: $Poppins;
     font-size: 20px;
     @include glassmorphism;
-    padding: 10px 30px;
+    padding: 8px 20px;
+    margin-left: 3.5em;
     @include formRaduis;
     &:focus {
       outline: none;
@@ -22,7 +21,8 @@
     font-family: $Poppins;
     font-size: 20px;
     @include glassmorphism;
-    padding: 10px 30px;
+    padding: 8px 20px;
+    margin-right: 2em;
     @include navRadius;
     &:focus {
       outline: none;
@@ -42,26 +42,15 @@
       cursor: pointer;
     }
   }
-  &__search {
-    background-color: transparent;
-    transform: translateX(-7.25em);
-    font-size: 17px;
-    padding: 13px 23px;
-    margin: 0.2em 1em 0.2em 1em;
-    border: 2px solid $black;
-    @include navRadius;
-    color: $white;
-    background-color: $black;
-    &:hover {
-      cursor: pointer;
-    }
-  }
 }
 
-@media screen and (min-width: $big) {
+@media (min-width: $medium) {
   .form {
-    flex: 10%;
-    height: 10%;
-    width: 100%;
+    &__input {
+      margin-left: 0;
+    }
+    &__searchInput {
+      margin-right: 0;
+    }
   }
 }
