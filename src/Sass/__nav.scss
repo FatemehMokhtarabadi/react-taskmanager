@@ -1,0 +1,50 @@
+.nav {
+  &__list {
+    display: flex;
+    align-items: flex-start;
+    justify-content: start;
+  }
+  &__item {
+    list-style: none;
+    margin-right: 5px;
+    padding: 4px 12px;
+    border: 2px solid $black;
+    transition: 500ms;
+    margin: 2em 0;
+    // @include glassmorphism;
+    @include navRadius;
+
+    &:hover {
+      cursor: pointer;
+    }
+  }
+  &__link {
+    text-decoration: none;
+    font-family: $Poppins;
+    font-size: 12px;
+    font-weight: 600;
+    color: black;
+  }
+}
+
+@media screen and (min-width: $big) {
+  .nav {
+    &__list {
+      justify-content: start;
+    }
+    &__item {
+      list-style: none;
+      margin-right: 10px;
+      padding: 4px 15px;
+      // border: 2px solid $black;
+      transition: 500ms;
+      @include navRadius;
+    }
+    &__link {
+      text-decoration: none;
+      font-family: $Poppins;
+      font-size: 14px;
+      font-weight: 600;
+    }
+  }
+}

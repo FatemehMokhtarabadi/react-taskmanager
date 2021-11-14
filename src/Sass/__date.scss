@@ -1,0 +1,56 @@
+.date {
+  border-bottom: 1px solid $black;
+  flex: 3%;
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: flex-start;
+  margin: 0 0 1em 0;
+
+  &__day {
+    font-family: $Roboto;
+    font-size: 20px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    background-color: $white;
+    padding: 1px 5px;
+  }
+  &__date {
+    margin-left: 10px;
+    font-family: $Roboto;
+    background-color: $white;
+    padding: 1px 3px;
+  }
+  &__year {
+    display: initial;
+    font-family: $Roboto;
+    background-color: $white;
+    padding: 1px 6px;
+    margin: 0;
+  }
+  &__motiv {
+    display: none;
+  }
+}
+
+@media screen and (min-width: $big) {
+  .date {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 20px 10px;
+
+    &__day {
+      font-family: $Roboto;
+      font-size: 20px;
+      font-weight: 600;
+      letter-spacing: 1px;
+    }
+    &__date {
+      font-family: $Roboto;
+      font-weight: 600;
+      padding: 1px 10px;
+    }
+  }
+}
