@@ -1,6 +1,6 @@
 import "../Sass/styles.css";
 
-const SearchInput = () => {
+const SearchInput = ({ tasksArray, searchTerm, setSearchTerm, searchTask }) => {
   return (
     <form className="form">
       <label htmlFor="search" className="form__label form__searchLabel">
@@ -10,6 +10,8 @@ const SearchInput = () => {
           name="search"
           placeholder="search..."
           className="form__searchInput"
+          value={searchTerm}
+          onChange={searchTask}
         />
       </label>
     </form>
