@@ -10,7 +10,6 @@ import {
   Route,
 } from "react-router-dom/cjs/react-router-dom.min";
 
-
 const Tasks = ({ tasksArray, setTasksArray }) => {
   const startTask = (taskId) => {
     const clickedTask = tasksArray.find((task) => task.id === taskId);
@@ -19,6 +18,7 @@ const Tasks = ({ tasksArray, setTasksArray }) => {
     } else {
       return;
     }
+    setTasksArray(tasksArray.slice());
   };
   const completeTask = (itemId) => {
     const clickedTask = tasksArray.find((task) => task.id === itemId);
@@ -30,6 +30,7 @@ const Tasks = ({ tasksArray, setTasksArray }) => {
     } else {
       return;
     }
+    setTasksArray(tasksArray.slice());
   };
 
   const deleteTask = (taskId) => {

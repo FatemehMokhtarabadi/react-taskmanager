@@ -11,7 +11,7 @@ const TaskManager = () => {
   const [tasksArray, setTasksArray] = useState([
     {
       title: "working on task manager",
-      taskStatus: "inProgress",
+      taskStatus: "done",
       id: uuidv4(),
     },
     {
@@ -22,6 +22,21 @@ const TaskManager = () => {
     {
       title: "skin care",
       taskStatus: "done",
+      id: uuidv4(),
+    },
+    {
+      title: "cooking",
+      taskStatus: "inProgress",
+      id: uuidv4(),
+    },
+    {
+      title: "getting vaccinated",
+      taskStatus: "inProgress",
+      id: uuidv4(),
+    },
+    {
+      title: "calling my friend",
+      taskStatus: "inProgress",
       id: uuidv4(),
     },
   ]);

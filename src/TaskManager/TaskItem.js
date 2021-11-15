@@ -14,7 +14,7 @@ const TaskItem = ({
     <div className="cards__card">
       <p className="cards__title">
         {" "}
-        {taskStatus} ⏳ {title}{" "}
+        <p className="cards__taskPhase"> {taskStatus} ⏳</p> {title}{" "}
       </p>
       <div className="cards__buttons">
         <button
@@ -33,7 +33,7 @@ const TaskItem = ({
           className="cards__btn delete"
           onClick={() => deleteTask(taskId)}
         >
-          <img className="icon-btn cards__icon" src={trash} alt="" />
+          <img className=" cards__icon" src={trash} alt="" />
         </button>
       </div>
     </div>

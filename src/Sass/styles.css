@@ -283,6 +283,7 @@
   width: 100%;
   background-color: #fff;
   margin: 1em 0;
+  padding: 60px 0 50px 0;
 }
 
 .cards__title {
@@ -290,6 +291,11 @@
   font-size: 18px;
   color: #000;
   margin-left: 30px;
+}
+
+.cards__taskPhase {
+  font-size: 0.9rem;
+  font-weight: 900;
 }
 
 .cards__buttons {
@@ -325,6 +331,11 @@
   border: none;
 }
 
+.cards__icon {
+  background-color: white;
+  padding: 0;
+}
+
 .start-btn {
   background-color: #000;
   color: #ffefe9;
@@ -339,11 +350,6 @@
   font-family: "Roboto", sans-serif;
   font-weight: 600;
   letter-spacing: 1px;
-}
-
-.icon-btn {
-  background-color: #fff;
-  padding: 0px 4px;
 }
 
 @media screen and (min-width: 780px) {
@@ -408,8 +414,8 @@
     -webkit-box-pack: end;
         -ms-flex-pack: end;
             justify-content: flex-end;
-    -webkit-transform: scale(1) translateX(-1em);
-            transform: scale(1) translateX(-1em);
+    -webkit-transform: scale(0.9) translateX(0);
+            transform: scale(0.9) translateX(0);
   }
   .start-btn {
     background-color: #000;
@@ -420,10 +426,6 @@
     background-color: #fff;
     color: #69493c;
     font-family: "Roboto", sans-serif;
-  }
-  .icon-btn {
-    background-color: #fff;
-    padding: 1.5px 4px;
   }
 }
 

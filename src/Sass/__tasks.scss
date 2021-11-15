@@ -28,10 +28,16 @@
     width: 100%;
     background-color: #fff;
     margin: 1em 0;
+    padding: 60px 0 50px 0;
   }
   &__title {
     @include regularText;
     margin-left: 30px;
+  }
+
+  &__taskPhase {
+    font-size: 0.9rem;
+    font-weight: 900;
   }
   &__buttons {
     display: flex;
@@ -52,7 +58,10 @@
       border: none;
     }
   }
-  // &__icon {}
+  &__icon {
+    background-color: white;
+    padding: 0;
+  }
 }
 
 .start-btn {
@@ -68,10 +77,6 @@
   font-family: $Roboto;
   font-weight: 600;
   letter-spacing: 1px;
-}
-.icon-btn {
-  background-color: $white;
-  padding: 0px 4px;
 }
 
 @media screen and (min-width: $medium) {
@@ -119,7 +124,7 @@
       flex-direction: row;
       align-items: center;
       justify-content: flex-end;
-      transform: scale(1) translateX(-1em);
+      transform: scale(0.9) translateX(0);
     }
   }
   .start-btn {
@@ -132,9 +137,5 @@
     color: $dirtyPink;
 
     font-family: $Roboto;
-  }
-  .icon-btn {
-    background-color: $white;
-    padding: 1.5px 4px;
   }
 }
