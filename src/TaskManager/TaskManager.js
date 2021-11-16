@@ -45,6 +45,9 @@ const TaskManager = () => {
 
   const addNewTask = (event) => {
     event.preventDefault();
+    if (newTask === "") {
+      return;
+    }
     const newTaskObject = {
       title: newTask,
       taskStatus: "todo",
